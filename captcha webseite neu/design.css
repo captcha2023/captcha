@@ -1,0 +1,436 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Noto Sans, sans-serif;
+			font: 100%/5, 'Noto Sans', sans-serif;
+	/*margin: 70px;*/
+	background-color: #000; 
+	color: #000;
+	overflow-x: hidden;
+
+}
+
+body {
+	cursor: url("x.jpg"), pointer;
+	box-sizing: border-box;
+	/*margin-bottom: 100px;*/
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.4rem;
+	margin-right: 10rem;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 5rem;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 3rem;
+}
+
+
+/*Code für index.html*/
+
+.hintergrund {
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  z-index: -1;
+  stroke-dasharray: 20000;
+  stroke-dashoffset: -15000;
+  animation-name: move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: -15s;
+  top: -2rem;
+  left: -2rem;
+  width: 100%;
+  transform: scale(1.05, 1.05);
+}
+
+path {
+  stroke: #000;
+  stroke-width: 0.3rem;
+  fill: none;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-row-gap: 0;
+	justify-items: center;
+	border-bottom: 0.15rem solid #000;
+	background-color: #fff;
+	z-index: 3;
+	left: 0;
+}
+
+.navbar li {
+	font-size: 1.4rem;
+	padding: 1rem;
+	list-style: none;
+	margin: 0;
+	font-weight: 600;
+}
+
+
+.navbar a {
+	text-decoration: none;
+	color: #000;
+}
+
+.navbar a:nth-child(2):hover {
+	background-color: #56dca9;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar a:nth-child(3):hover {
+	background-color: #0aa3a0;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar a:nth-child(4):hover {
+	background-color: #22eb7e;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar a:nth-child(5):hover {
+	background-color: #558139;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar a:nth-child(6):hover {
+	background-color: #ffbd00;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.page {
+	z-index: 1;
+	top: 10rem;
+	left: 0;
+}
+
+.wrapper {
+	max-width: 100%;
+	overflow: hidden;
+	margin-top: 1rem;
+}
+
+.header {
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	animation: scrolling 10s linear infinite;
+}
+
+.header p {
+	font-size: 4rem;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.title {
+	position: relative;
+	z-index: 2;
+	mix-blend-mode: exclusion;
+	top: -5rem;
+	width: 50%;
+}
+
+.title h1 {
+	font-size: 18rem;
+	line-height: 5rem;
+	color: #fff;
+}
+
+.title h2 {
+	position: relative;
+	color: #fff;
+	left: 140%;
+	top: -5rem;
+}
+
+.vege {
+	position: relative;
+	left: 10%;
+
+}
+
+.tation {
+	position: relative;
+	left: 40%;
+}
+
+.rest {
+	background-color: #000;
+	color: #fff;
+	scale: 1.05;
+}
+
+.intro {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5rem;
+	padding-bottom: 0rem;
+}
+
+.intro h2 {
+	margin-bottom: 3rem;
+	font-size: 4rem;
+}
+
+.intro p {
+	padding-right: 10rem;
+}
+
+.more {
+	display: flex;
+	padding: 5rem;
+	padding-top: 0rem;
+	margin-bottom: 100px;
+
+}
+
+.more a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.more p {
+	border: 1px solid white;
+	padding: 0.8rem;
+}
+
+.more p:hover {
+	background-color: #fff;
+	color: #000;
+	transition: all 0.3s ease-in-out;
+}
+
+.more p:active {
+	scale: 97%;
+}
+
+.footer {
+	border-top: 0.05rem solid #fff;
+	background-color: #000;
+	scale: 1.05;
+}
+
+.links {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 50%;
+	padding: 7.5rem;
+	padding-top: 1.5rem;
+}
+
+.links li {
+	list-style: none;
+}
+
+.links a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.links a:hover {
+	text-decoration: underline 1px #fff;
+}
+
+.weissraum {
+	height: 400px;
+}
+
+
+
+/*code für festival.html*/
+
+.festival {
+	padding: 5rem;
+	padding-top: 6rem;
+	background-color: #56dca9;
+	color: #fff;
+	scale: 1.05;
+}
+
+.festival p {
+	padding-top: 1rem;
+}
+
+.timeline {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background-color: #fff;
+	scale: 1.05;
+}
+
+.dates {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	list-style: none;
+	padding-top: 8rem;
+	padding: 5rem;
+	padding-bottom: 0rem;
+}
+
+.circles {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-top: 1rem;
+}
+
+.circles div {
+	background-color: #56dca9;
+	width: 15px;
+	height: 15px;
+}
+
+.details {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	list-style: none;
+	padding: 5rem;
+	padding-top: 0.5rem;
+	border-top: 1px solid #000;
+}
+
+.details p {
+	margin-right: 0rem;
+}
+
+.prizes {
+	padding: 5rem;
+	padding-top: 6rem;
+	background-color: #56dca9;
+	color: #fff;
+	scale: 1.05;
+	padding-bottom: 5rem;
+}
+
+.prizes h2 {
+	font-size: 2rem;
+}
+
+.sign {
+	display: flex;
+	padding-top: 0rem;
+	margin-bottom: 100px;
+}
+
+.sign a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.sign p {
+	border: 1px solid white;
+	padding: 0.8rem;
+}
+
+.sign p:hover {
+	background-color: #fff;
+	color: #56dca9;
+	transition: all 0.3s ease-in-out;
+}
+
+.sign p:active {
+	scale: 97%;
+}
+
+
+/*code für anniversary.html*/
+
+.happy {
+	padding: 5rem;
+	background-color: #fff;
+	scale: 1.05;
+	padding-bottom: 0;
+}
+
+.happy img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.happy h1 {
+	position: relative;
+	color: #0aa3a0;
+	top: -550px;
+}
+
+.happy p {
+	position: relative;
+	color: #0aa3a0;
+	top: -550px;
+}
+
+.article {
+	position: relative;
+	top: -400px;
+	background-color: #0aa3a0;
+	color: #fff;
+	padding: 5rem;
+	scale: 1.05;
+}
+
+.article p {
+	margin-right: 10rem;
+}
+
+.article a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.article a:hover {
+	text-decoration: 1.5px white underline;
+}
+
+.footer_ann {
+	border-top: 0.05rem solid #fff;
+	background-color: #000;
+	scale: 1.05;
+	position: relative;
+	top: -400px;
+}
+
+
+
+
+
+/*Animationen*/
+
+@keyframes scrolling {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes move {
+  /*0% { stroke-dashoffset: -15000; }
+  50% { stroke-dashoffset: -5000;  }
+  100% { stroke-dashoffset: 0;  }*/
+  to {
+    stroke-dashoffset: 0;
+  }
+}
