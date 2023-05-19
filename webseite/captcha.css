@@ -1,0 +1,155 @@
+html {
+	font-family: Noto Sans, sans-serif;
+			font: 100%/5, 'Noto Sans', sans-serif;
+	/*margin: 70px;*/
+	background-color: #000; 
+	color: #fff;
+
+}
+
+p {
+	font-size: 20px;
+}
+
+body {
+	margin-bottom: 100px;
+	cursor: url("x.jpg"), pointer;
+}
+
+div {
+	margin: 70px;
+}
+
+.header {
+	display: flex;
+	line-height: 2.2;
+	cursor: url("x.jpg"), pointer;
+}
+
+			.header a {
+				margin-left: 10px;
+				line-height: 2;
+			}
+
+h1 {
+	padding: 5rem;
+	padding-bottom: 1rem;
+	font-size: 70px;
+	text-align: center;
+}
+
+p {
+	padding: 5rem;
+	padding-bottom: 0rem;
+}
+
+.vegetation {
+	background-color: #0F512C;
+	border-radius: 1rem;
+}
+
+h2 {
+	padding: 5rem;
+	padding-bottom: 0rem;
+	font-size: 50px;
+	text-align: center;
+}
+
+.intro h2{
+	text-align: left;
+	padding-top: 1rem;
+	padding-bottom: 0,5rem;
+
+}
+
+.vegetation p {
+	padding: 5rem;
+	padding-top: 0rem;
+}
+
+.timeline {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	list-style: none;
+	padding-top: 3rem;
+}
+
+.timeline p {
+	padding: 0rem;
+}
+
+.workshop {
+	background-color: #0F512C;
+	border-radius: 1rem;
+}
+
+.workshop ul {
+	list-style: none;
+	padding: 5rem;
+}
+
+.gang {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	list-style: none;
+	padding-top: 3rem;
+}
+
+.team ul {
+	list-style: none;
+	padding: 5rem;
+}
+
+.contact {
+	background-color: #0F512C;
+	padding-bottom: 50px;
+	border-radius: 1rem;
+}
+
+.contact h2 {
+	padding-bottom: 5rem;
+}
+
+div.cursors div {
+    position: absolute;
+   /* top: 300px;
+    left: 300px;
+    width: 15px;
+    height: 15px;*/
+    /*border: var(--s-border-no-color) var(--c-akzent);*/
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* filter: invert(1);
+    mix-blend-mode: difference; */
+    cursor: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+
+a:hover {
+	color: #0F512C;
+}
+
+.privacy {
+	display: grid;
+	grid-template-columns: 35% 15% 25% 25%;
+	list-style: none;
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+}
+
+
+.privacy li:hover {
+	color: #0F512C;
+}
+
+.impressum h3{
+	margin-left: 70px;
+
+}
